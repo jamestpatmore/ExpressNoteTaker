@@ -3,10 +3,12 @@
 [![made-with-node.js](https://img.shields.io/badge/Made%20with-Node-1f425f.svg)](https://nodejs.org/en/)
 [![made-with-javascript](https://img.shields.io/badge/Made%20with-Javascript-1f425f.svg)](https://javascript.plainenglish.io)
 
-# Description 
-A node.js application using express that uses constructed apis to store data from the user executing the code outside of the browser :dizzy: :hole:
+![screenshot](./assets/notetakerss.png)
 
-For the video walkthrough explaining the application go [here] ()
+# Description 
+A node.js application using express that uses constructed apis to store data from the user executing the code outside of the browser. Which allows users to make, save, and delete notes and it all happens in real time.  :dizzy: :hole:
+
+For the video walkthrough explaining the application go [here](https://drive.google.com/file/d/1tAzmlk8iGYuyyzwW5KWdq5yCO_NrdATq/view)
 
 ## User Story 
 
@@ -51,11 +53,8 @@ npm start
 
 to launch the application 
 
-If you'd like a more user friendly approach over the command-line, then you can visit my heroku link [here] () :rainbow:
+If you'd like a more user friendly approach over the command-line, then you can visit my heroku link [here](https://express-note-taker-jtp.herokuapp.com/notes) :rainbow:
 
-## Usage 
-
-example of the application being used :diamonds:
 
 ## Contact
 [Email](mailto:jamesthomaspatmore7@gmail.com)

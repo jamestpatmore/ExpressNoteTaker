@@ -22,10 +22,12 @@ module.exports = app => {
             title: req.body.title,
             text: req.body.text,
             id: uuid.v4(),
+            // uuid was great and is very helpful for id implentation/usage
         }
         fs.readFile(__dirname + "/../db/db.json", (err, data) => {
             if (err) throw err;
             allNotes = JSON.parse(data);
+            //pushing the data to the db/json
             allNotes.push(newNote);
             fs.writeFile(__dirname + "/../db/db.json", JSON.stringify(allNotes), "utf-8", (err) => {
                 if (err) throw err;
@@ -43,6 +45,7 @@ module.exports = app => {
             if (err) throw err;
             let notesDB = JSON.parse(data);
             const filteredNotes = notesDB.filter(values => values.id != noteId);
+            //high order function to filter the note then delete
             fs.writeFile(__dirname + "/../db/db.json", JSON.stringify(filteredNotes), "utf-8", err => {
                 if (err) throw err;
                 console.log("The note has been deleted.")
